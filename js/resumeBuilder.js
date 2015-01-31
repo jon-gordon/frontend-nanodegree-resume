@@ -1,58 +1,134 @@
-// var awesomeThoughts = "I am Jon and I am AWESOME!";
-// console.log(awesomeThoughts);
-// var funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
-// $("#main").append(funThoughts);
+var work = 
+{
+	"jobs" : 
+	[
+		{
+			"employer" : "G4S Monitoring Technologies Ltd",
+			"title" : "Systems Design Engineer",
+			"location" : "Leicester, UK",
+			"dates" : "May 2012 - Present",
+			"description" : "Et cetra..."
+		},
 
-var name = "Jon Gordon";
-var role = "Mobile/Web Developer";
+		{
+			"employer" : "Jaguar Land Rover",
+			"title" : "Infotainment Engineer",
+			"location" : "Gaydon, UK",
+			"dates" : "April 2012 - May 2012",
+			"description" : "Et cetra..."
+		},
 
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-var bio = {
-	name : "Jon Gordon",
-	role : "Mobile/Web Developer",
-	contact_info : {
-		email : "jon@jongor-software.com",
-		twitter : "@gordon_jon",
-		github : "jon-gordon"
-	},
-	bioPic : "http://placekitten.com/g/200/300",
-	welcome_msg : "Welcome to my JavaScript CV",
-	skills : [ "nunchucku", "bow hunting", "computer hacking" ]
+		{
+			"employer" : "G4S Monitoring Technologies Ltd",
+			"title" : "Embedded Engineer",
+			"location" : "Leicester, UK",
+			"dates" : "Novemeber 2009 - April 2012",
+			"description" : "Et cetra..."
+		}
+	]
 };
 
-var work = {
-	position : "Systems Design Engineer",
-	employer : "G4S Monitoring Technologies Ltd",
-	years : 5,
-	city : "Leicester"
+var projects = 
+{
+	"projects" :
+	[
+		{
+			"title" : "Project 1",
+			"dates" : "Today",
+			"description" : "This is the first project",
+			"images" :
+			[
+				"http://placekitten.com/g/100/100", 
+				"http://placekitten.com/g/120/120", 
+				"http://placekitten.com/g/140/140", 
+				"http://placekitten.com/g/160/160"
+			]
+		},
+
+		{
+			"title" : "Project 2",
+			"dates" : "Yesterday",
+			"description" : "This is the second object",
+			"images" :
+			[
+				"http://placekitten.com/g/180/180", 
+				"http://placekitten.com/g/200/200", 
+				"http://placekitten.com/g/220/220", 
+				"http://placekitten.com/g/240/240"
+			]
+		}
+	]
+};
+
+var bio =
+{
+	"name" : "Jon Gordon",
+	"role" : "Mobile/Web Developer",
+	"welcomeMessage" : "Welcome to my online C.V.",
+	"contacts" :
+	{
+		"mobile" : "07545949838",
+		"email" : "jon@jongor-software.com",
+		"github" : "jon-gordon",
+		"twitter" : "@gordon_jon",
+		"location" : "Wellingborough, UK"
+	},
+	"skills" :
+	[
+		"C", "Android", "HTML", "CSS", "JavaScript", "jQuery", "iOS"
+	]
 };
 
 var education = 
-[
-    {
-        "name": "University of Leicester",
-        "years": 4,
-        "city": "Leicester",
-        "degree": "BEng (Hons) with Industry"
-    },
-    {
-        "name": "University of Leicester",
-        "years": 2,
-        "city": "Leicester",
-        "degree": "MSc"
-    }
-];
+{
+	"schools" :
+	[
+		{
+			"name" : "University of Leicester",
+			"location" : "Leicester, UK",
+			"degree" : "BEng (Hons)",
+			"majors" :
+			[
+				"Electrical and Electronic Engineering", "Industry"
+			],
+			"dates" : "September 2005 - July 2009",
+			"url" : "www.le.ac.uk"
+		},
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
+		{
+			"name" : "University of Leicester",
+			"location" : "Leicester, UK",
+			"degree" : "MSc",
+			"majors" :
+			[
+				"Reliable Embedded Systems"
+			],
+			"dates" : "September 2009 - July 2011",
+			"url" : "www.le.ac.uk"
+		}
+	],
 
-$("#main").append(bio.welcome_msg);
-$("#main").append(bio.contact_info.email);
-$("#main").append(bio.contact_info.twitter);
-$("#main").append(bio.contact_info.github);
+	"onlineCourses" :
+	[
+		{
+			"title" : "Javascript Basics",
+			"school" : "Udacity",
+			"dates" : "January 2015 - February 2015",
+			"url" : "www.udacity.com"
+		},
 
-$("#main").append(work["position"]);
+		{
+			"title" : "How to use Git and Github",
+			"school" : "Udacity",
+			"dates" : "January 2015",
+			"url" : "www.udacity.com"
+		},
 
-$("#main").append(education[0].name);
+		{
+			"title" : "Intro to HTML and CSS",
+			"school" : "Udacity",
+			"dates" : "January 2015",
+			"url" : "www.udacity.com"
+		}
+	]
+};
